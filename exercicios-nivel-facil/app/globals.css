@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
-*{
+.fundo-claro{
+    background-color: white;
+    color: black;
+}
+
+.fundo-escuro{
     background-color: black;
+    color: white;
+}
+
+.fundo-escuro p,
+.fundo-escuro button {
     color: white;
 }

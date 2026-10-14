@@ -6,8 +6,8 @@ export default function ReceberNotificacao(){
 
     return(
         <div>
-            <button onClick={() => setNotificacao(notificacao === true ? false : true)} style={{cursor: 'pointer'}}>Receber notificações</button>
-            <p>{notificacao}</p>
+            <button onClick={() => setNotificacao(!notificacao)} style={{cursor: 'pointer'}}>Receber notificações</button>
+            <p>{notificacao ? 'Ativado' : 'Desativado'}</p>
         </div>
         
     );
