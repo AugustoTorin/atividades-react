@@ -14,3 +14,127 @@
 .fundo-escuro button {
     color: white;
 }
+
+/* Layout geral */
+.painel-configuracoes {
+  min-height: 100vh;
+  padding: 32px 20px;
+  background: #0a0a0a;
+  color: #ededed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.painel-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.painel-titulo {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Cartões */
+.painel-card {
+  margin-bottom: 16px;
+  padding: 20px;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  background: #0a0a0a;
+}
+
+.painel-card h2 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.painel-descricao {
+  margin: 12px 0 0;
+  color: #b8b8b8;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Linhas de configuração e resumo */
+.configuracao-linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 12px 0;
+}
+
+.configuracao-valor {
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Indicadores de status */
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-ativo {
+  background: #063b25;
+  color: #35e58b;
+}
+
+.status-inativo {
+  background: #292929;
+  color: #dedede;
+}
+
+/* Botões */
+.painel-configuracoes button {
+  padding: 9px 14px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #1c1c1c;
+  color: #ededed;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.painel-configuracoes button:hover {
+  background: #303030;
+}
+
+.painel-configuracoes button:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+/* Controlador de fonte */
+.controle-fonte {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.controle-fonte p {
+  margin: 0;
+}
+
+/* Telas pequenas */
+@media (max-width: 600px) {
+  .painel-configuracoes {
+    padding: 20px 12px;
+  }
+
+  .painel-card {
+    padding: 16px;
+  }
+
+  .configuracao-linha {
+    align-items: flex-start;
+  }
+}
